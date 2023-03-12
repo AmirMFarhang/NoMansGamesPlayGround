@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<script>
+  let bars = document.getElementById('bars');
+
+  let mobileMenu = document.getElementById('mobileMenu');
+
+  bars.addEventListener('click', function(){
+    mobileMenu.classList.toggle('show');
+  });
+</script>
+
 <html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8">
@@ -11,150 +21,74 @@
   <body class="bg-primary">
 
     <!-- RESPONSIVE NAVIGATION -->
-    <header id="top" class="sticky top-0 bg-primary h-30 min-h-28 max-h-32">
-      <div class="menu flex justify-between items-center p-2 px-4">
-        <div class="flex items-center text-maintext">
-          <img class="max-h-16 h-12 px-2"  src="img/logo.png" alt="">
-        </div>
-        <div>
-          <button aria-label="navigation" type="button" id="bars" class="transition duration-300 md:hidden h-8 w-8 text-indigo-200 focus:outline-none focus:text-white hover:text-white"><i class="fas fa-bars text-xl"></i></button>
-        </div>
-        <div class="hidden md:flex">
-          <ul class="md:flex">
-            <li>
-            <a href="#" class="text-sm text-maintext font-light transition duration-300 hover:font-normal hover:underline hover:text-white cursor-pointer p-2 mr-4">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="text-sm text-maintext font-light transition duration-300 hover:font-normal hover:underline hover:text-white focus:underline focus:font-normal focus:text-white py-2 w-100">Blog
-                <svg class="float-right pt-1 mr-2 text-maintext" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a> 
-            
-            
-            <ul class="dropdown-content bg-indigo-900 text-maintext  text-sm py-4 text-center">
-              <li class="font-light transition duration-300 hover:font-normal hover:bg-white hover:text-indigo-900 py-2 w-full"><a href="#">Business</a></li>
-              <li class="font-light transition duration-300 hover:font-normal hover:bg-white hover:text-indigo-900 py-2 w-full"><a href="#">Travel</a></li>
-              <li class="font-light transition duration-300 hover:font-normal hover:bg-white hover:text-indigo-900 py-2 w-full"><a href="#">Family</a></li>
-              <li class="font-light transition duration-300 hover:font-normal py-2 hover:bg-white hover:text-indigo-900  w-full"><a href="#">Cooking</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="text-sm text-maintext font-light transition duration-300 hover:font-normal hover:underline hover:text-white p-2 mr-4">About</a></li>
-          <li><a href="#" class="text-sm tracking-wide transition duration-300 hover:tracking-tight text-maintext font-light hover:font-normal  hover:underline hover:text-white  p-2 mr-8">Contact</a></li>
-        </ul>
-        </div>
-      </div>
-
-      <div id="mobileMenu" class="hidden flex justify-between items-center px-2 pt-2 pb-4 text-center">
-        <ul class="flex flex-row justify-center">
-        <li><a href="#" class="inline-block text-sm text-maintext font-light transition duration-300 hover:font-normal hover:underline hover:text-white cursor-pointer px-2 py-1">Home</a></li>
-        <div class="bg-primary dropdown-mobile">
-        <a href="#" class="flex  justify-center flex-end text-sm text-maintext font-light transition duration-300 hover:font-normal hover:underline hover:text-white focus:underline focus:font-normal focus:text-white mt-1 px-1">Blog<svg class="float-right pt-1 mr-2" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-        </svg></a>
-        <ul class="dropdown-content-mobile bg-primary overflow-y-visible border-gray-200 border-opacity-50 border-t-2 border-b-2 text-maintext text-sm  w-full mt-2">
-          <li class="font-light transition duration-300 hover:font-normal hover:bg-white hover:text-indigo-900  p-2"><a href="#">Business</a></li>
-          <li class="font-light transition duration-300 hover:font-normal hover:bg-white hover:text-indigo-900  p-2"><a href="#">Travel</a></li>
-          <li class="font-light transition duration-300 hover:font-normal hover:bg-white hover:text-indigo-900  p-2"><a href="#">Family</a></li>
-          <li class="font-light transition duration-300 hover:font-normal hover:bg-white hover:text-indigo-900 p-2"><a href="#">Cooking</a></li>
-        </ul>
-      </div>
-        <li><a href="#" class="inline-block text-sm  text-maintext font-light transition duration-300 hover:font-normal hover:underline hover:text-white mt-1 px-2 py-1">About</a></li>
-        <li><a href="#" class="inline-block text-sm  text-maintext font-light transition duration-300 hover:font-normal hover:underline hover:text-white  mt-1 px-2 py-1">Contact</a></li>
-      </ul>
-
-      </div>
-    </header>
 
   <!-- TOP SECTION-->
     <div class="grid grid-cols-1 md:grid-cols-3">
-
-    <section class="md:col-span-1 md:mx-12 my-4 md:my-12 p-6 md:px-8 ">
+    <section class="items-center md:col-span-1 md:mx-12 my-4 md:my-12 p-6 md:px-8 ">
         <img class="h-180 w-120 px-2"  src="img/logo.png" alt="">
-        </section>
-        <div class="p-10 ">
-            <!--Card 1-->
-            <div class="max-w-full rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://source.unsplash.com/random/x400/?business" alt="Mountain">
+    </section>
+    <div class="group w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-2 mx-8 my-12 items-center p-4">
+                <img class="object-none h-[32rem] w-full rounded" src="https://source.unsplash.com/random/x120/?business " alt="m">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Mountain</div>
-                    <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                    <p class="text-maintext text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                 </div>
                 <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
                 </div>
             </div>
-        </div>
-        </div>
+    </div>
 
     <!-- MAIN -->
-    <main>
-      <div class="grid grid-cols-1 md:grid-cols-3">
-        <!-- RECENT POST -->
-        <section class="md:col-span-2 md:mx-12 my-4 md:my-12 p-6 md:px-8 bg-gray-100 md:shadow-lg">
-          <img src="https://source.unsplash.com/random/x500/?blogging" alt="" class="mx-w-100 py-2">
-          <h1 class="text-3xl border-b-2 border-indigo-300 w-3/4 md:w-1/2 my-4">Post Title</h1>
-          <em class="text-xs mr-4">Written by Jennifer Wong</em>
-          <small class="text-xs text-gray-700">July 09 2020</small>
-          <p class="text-base mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corrupti cum ipsum reprehenderit tenetur quam recusandae qui perferendis. Quae earum ipsam sequi, iusto quisquam accusamus, cum soluta sit sunt laboriosam laudantium non cupiditate praesentium blanditiis optio doloribus unde? Ab dolorem laborum voluptatum quas reiciendis doloremque obcaecati facere architecto dolores ea. </p>
-          <blockquote class="my-6 mx-4 p-4 text-2xl border-l-4 border-indigo-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</blockquote>
-          <p class="text-base mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eius, officia laborum veritatis quisquam voluptas atque ut aut ipsa! Hic, deleniti asperiores harum, quas dignissimos praesentium alias deserunt unde expedita iusto quia. Odit sunt molestiae repellat similique nulla, doloremque eius rem. Similique voluptates reprehenderit aliquam enim esse excepturi reiciendis necessitatibus.</p>
-          <a class="flex items-center text-indigo-700 hover:text-indigo-500 hover:underline focus:underline transition duration-300" href="#">Read More
-            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="24px" height="20px">
-              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </a>
-        </section>
-
-      <!-- SIDEBAR -->
-        <aside class="col-span-1 mx-8 my-12 items-center">
-          <div class="mb-12 py-4 bg-white px-8 shadow-base border-2 border-indigo-200 rounded">
-            <h3 class="text-xl border-b-2 border-indigo-300 mb-4 w-3/4">About</h3>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipsicing elit. Dolorum totam corporis illum esse sapiente. Distinctio cumque accusamus mollitia. Quibusdam tempore ut ad maxime magni numquam optio voluptates debitis dignissimos corrupti? Aliquid dolorum mollitia veniam minus tenetur vel, voluptate aperiam ut voluptatum cum odit iste autem reiciendis.
-            <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima eaque totam id iusto!</p>
-          </div>
-          <div class="py-4 px-8 bg-white shadow-base border-2 border-indigo-200  rounded">
-            <h3 class="text-xl border-b-2 border-indigo-300 mb-4 w-3/4">Instagram</h3>
-            <p class="text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsa! Unde culpa perferendis quae, fuga repudiandae eos ducimus harum neque minus id hic consectetur dolorum.</p>
-            <div id="image-grid" class="grid grid-cols-3 gap-4">
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-              <div class="col-span-1">
-                <img src="https://source.unsplash.com/random/" alt="">
-              </div>
-            </div>
-            <button class="block bg-indigo-600 font-light hover:font-normal hover:bg-indigo-500 hover:underline text-white mx-auto mt-4 py-2 px-4 rounded transition duration-300">Follow @instaname</a></button>
-          </div>
-        </aside>
-
+    <div class="flex flex-col lg:flex-row justify-center items-center h-screen w-screen">
+      <div class="  w-auto h-max-[44rem] rounded overflow-hidden bg-secondary  mx-8  my-12 items-center">
+        <img class="object-none h-[32rem] w-full" src="https://source.unsplash.com/random/x120/?business" alt="m">
+        <div class="px-6 py-4">
+          <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+          <p class="text-maintext text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
         </div>
-    </main>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
+        </div>
+      </div>
+      <div class="  w-auto h-max-[44rem] rounded overflow-hidden bg-secondary  mx-8    my-12 items-center">
+        <img class="object-none h-[32rem] w-full rounded" src="https://source.unsplash.com/random/x120/?business" alt="m">
+        <div class="px-6 py-4">
+          <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+          <p class="text-maintext text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
+        </div>
+      </div>
+      <div class="  w-auto h-max-[44rem] rounded overflow-hidden bg-secondary  mx-8    my-12 items-center">
+        <img class="object-none h-[32rem] w-full rounded" src="https://source.unsplash.com/random/x120/?business" alt="m">
+        <div class="px-6 py-4">
+          <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+          <p class="text-maintext text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
+        </div>
+      </div>
+    </div>
+
 
       <!-- SUBSCRIBE -->
       <div id="subscribe" class="bg-indigo-900">
@@ -333,14 +267,5 @@ Back To Top</a
 ></div>
 
     </footer>
-    <script>
-        let bars = document.getElementById('bars');
-
-        let mobileMenu = document.getElementById('mobileMenu');
-
-        bars.addEventListener('click', function(){
-           mobileMenu.classList.toggle('show');
-        });
-    </script>
   </body>
 </html>

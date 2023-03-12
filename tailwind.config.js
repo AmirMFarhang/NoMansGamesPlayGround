@@ -7,6 +7,7 @@ module.exports = {
           current: 'currentColor',
           'primary': '#240436',
           'maintext': '#ffffff',
+          'secondary': '#580088',
 
       },
     container: {

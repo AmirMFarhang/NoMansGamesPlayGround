@@ -8,6 +8,7 @@
     mobileMenu.classList.toggle('show');
   });
 </script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
@@ -24,248 +25,80 @@
 
   <!-- TOP SECTION-->
     <div class="grid grid-cols-1 md:grid-cols-3">
-    <section class="items-center md:col-span-1 md:mx-12 my-4 md:my-12 p-6 md:px-8 ">
-        <img class="h-180 w-120 px-2"  src="img/logo.png" alt="">
+        <section class="flex flex-col items-center md:col-span-1 md:mx-12 my-4 md:my-12 p-6 md:px-8 ">
+        <img class="flex-1 mx-h-180 mx-w-120 px-2"  src="img/logo.png" alt="">
+            <p class="flex-2 text-2xl md:text-6xl font-Wagner text-secondary px-2"> Where <i>community</i> comes first, <br> Where ratings matter</p>
     </section>
-    <div class="group w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-2 mx-8 my-12 items-center p-4">
-                <img class="object-none h-[32rem] w-full rounded" src="https://source.unsplash.com/random/x120/?business " alt="m">
-                <div class="px-6 py-4">
+        <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-2 mx-8 my-12 items-center p-4 ">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <div class="absolute rounded top-0 items-center overflow-visible bg-secondary md:w-16 md:h-16 m-10"></div>
+            <lottie-player class = "absolute top-0 object-fit mx-2" src="https://assets10.lottiefiles.com/packages/lf20_zaknwapl.json"  background="transparent"  speed="1" style=" width: 8rem; height: 8rem;"   loop autoplay></lottie-player>
+            <div class="px-6 py-4">
                     <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                     <p class="text-maintext text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                 </div>
-                <div class="px-6 pt-4 pb-2">
+            <div class="px-6 pt-4 pb-2">
                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
                 </div>
-            </div>
+        </div>
     </div>
-
     <!-- MAIN -->
-    <div class="flex flex-col lg:flex-row justify-center items-center h-screen w-screen">
-      <div class="  w-auto h-max-[44rem] rounded overflow-hidden bg-secondary  mx-8  my-12 items-center">
-        <img class="object-none h-[32rem] w-full" src="https://source.unsplash.com/random/x120/?business" alt="m">
-        <div class="px-6 py-4">
-          <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
-          <p class="text-maintext text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-          </p>
+    <section class="flex flex-row items-center">
+        <lottie-player class = "flex-2  mx-2" src="./Resources/Lottie/Flame.json"  background="transparent"  speed="1" style=" width: 12rem; height: 12rem;"   loop autoplay></lottie-player>
+        <h1 class = "flex-2 font-Wagner text-6xl md:text-9xl text-secondary "> Trending Right now </h1>
+    </section>
+    <hr class="h-px my-8 bg-secondary border-0 dark:bg-gray-700">
+
+    <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-1 mx-8 my-12 items-center  ">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <div class="px-6 py-4">
+                <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                <p class="text-maintext text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
+            </div>
         </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
+        <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-1 mx-8 my-12 items-center  ">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <div class="px-6 py-4">
+                <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                <p class="text-maintext text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
+            </div>
         </div>
-      </div>
-      <div class="  w-auto h-max-[44rem] rounded overflow-hidden bg-secondary  mx-8    my-12 items-center">
-        <img class="object-none h-[32rem] w-full rounded" src="https://source.unsplash.com/random/x120/?business" alt="m">
-        <div class="px-6 py-4">
-          <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
-          <p class="text-maintext text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-          </p>
+        <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-1 mx-8 my-12 items-center  ">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <div class="px-6 py-4">
+                <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                <p class="text-maintext text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
+            </div>
         </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
-        </div>
-      </div>
-      <div class="  w-auto h-max-[44rem] rounded overflow-hidden bg-secondary  mx-8    my-12 items-center">
-        <img class="object-none h-[32rem] w-full rounded" src="https://source.unsplash.com/random/x120/?business" alt="m">
-        <div class="px-6 py-4">
-          <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
-          <p class="text-maintext text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
-        </div>
-      </div>
     </div>
-
-
       <!-- SUBSCRIBE -->
-      <div id="subscribe" class="bg-indigo-900">
-        <div class="flex flex-col justify-center items-center text-center mx-auto py-16 w-1/2 ">
-          <h1 class="text-3xl text-white pb-2">Subscribe For Updates</h1>
-          <p class="text-sm font-light text-gray-100 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam iure vel consectetur. Nulla corrupti dolorum reiciendis, vitae nam blanditiis aliquid omnis atque, adipisci tempora qui perspiciatis natus dolores hic voluptatem doloremque nisi ipsa asperiores placeat?</p>
-          <div class="flex flex-wrap justify-center items-center mt-4">
-            <label class="text-sm text-gray-100 pr-2">Email Address:</label>
-            <input class="text-sm p-2 px-4 my-2 w-48 rounded focus:outline-indigo-200 text-indigo-800" type="text" aria-label="email"  name="email" placeholder="Enter your email address" required />
-
-            <button class="bg-indigo-600 font-light hover:font-normal hover:bg-indigo-500 text-white py-2 px-4 ml-2 my-2 rounded transition duration-300">Sign Up</button>
-        </div>
-      </div>
-      </div>
-    </div>
   
-    <!-- BLOG CARDS -->
-    <div id="blog-cards" class="grid p-8 lg:grid-cols-3 md:grid-cols-2 md:gap-4">
-    <div class="max-w-sm m-2 rounded overflow-hidden shadow-lg bg-white text-gray-800">
-      <img src="https://source.unsplash.com/random/x400/?business" alt="" class="w-full" />
-      <div class="px-6 py-4">
-        <div>
-          <h1 class="text-2xl">Post Title</h1>
-          <em class="text-xs mr-4">Written by Jane Doe</em>
-          <small class="text-xs text-gray-700">July 04 2020</small>
-          <p class="text-sm pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, sint atque praesentium similique error aperiam hic rem nulla itaque recusandae nihil facilis animi doloribus ratione asperiores vero amet et adipisci...</p>
 
-          <a class="mt-2 text-sm flex items-center text-indigo-700 hover:text-indigo-500 hover:underline focus:underline transition duration-300" href="#">Read More
-            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="20px" height="16px">
-              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </a>
-        </div>
-        
-      </div>
-      <div class="px-6 py-4">
-          <span
-            class="inline-block bg-red-200 bg-opacity-75 rounded-full px-3 py-1 text-sm font-semibold text-red-800 mr-2"
-          >
-            #business
-          </span>
-          <span
-          class="inline-block bg-purple-200 bg-opacity-75 rounded-full px-3 py-1 text-sm font-semibold text-purple-800 mr-2"
-        >
-          #travel
-        </span>
-       
-      </div>
-    
-    </div>
-    <div class="max-w-sm m-2 rounded overflow-hidden shadow-lg bg-white text-gray-800">
-      <img src="https://source.unsplash.com/random/x400/?family" alt="" class="w-full" />
-      <div class="px-6 py-4">
-        <div>
-          <h1 class="text-2xl">Post Title</h1>
-          <em class="text-xs mr-4">Written by Susan Williams</em>
-          <small class="text-xs text-gray-700">July 01 2020</small>
-          <p class="text-sm pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, sint atque praesentium similique error aperiam hic rem nulla itaque recusandae nihil facilis animi doloribus ratione asperiores vero amet et adipisci...</p>
-          <a class="mt-2 text-sm flex items-center text-indigo-700 hover:text-indigo-500 hover:underline focus:underline transition duration-300" href="#">Read More
-            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="20px" height="16px">
-              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </a>
-        </div>
-        
-      </div>
-      <div class="px-6 py-4">
-          <span
-            class="inline-block bg-yellow-200 bg-opacity-75 rounded-full px-3 py-1 text-sm font-semibold text-yellow-800 mr-2"
-          >
-            #family
-          </span>
-          <span
-          class="inline-block bg-purple-200 bg-opacity-75 rounded-full px-3 py-1 text-sm font-semibold text-purple-800 mr-2"
-        >
-          #travel
-        </span>
-       
-      </div>
-    
-    </div>
-    <div class="max-w-sm m-2 rounded overflow-hidden shadow-lg bg-white text-gray-800">
-      <img src="https://source.unsplash.com/random/x400/?cooking" alt="" class="w-full" />
-      <div class="px-6 py-4">
-        <div>
-          <h1 class="text-2xl">Post Title</h1>
-          <em class="text-xs mr-4">Written by Melissa Smith</em>
-          <small class="text-xs text-gray-700">June 27th 2020</small>
-          <p class="text-sm pt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, sint atque praesentium similique error aperiam hic rem nulla itaque recusandae nihil facilis animi doloribus ratione asperiores vero amet et adipisci...</p>
-          <a class="mt-2 text-sm flex items-center text-indigo-700 hover:text-indigo-500 hover:underline focus:underline transition duration-300" href="#">Read More
-            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="20px" height="16px">
-              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </a>
-        </div>
-        
-      </div>
-      <div class="px-6 py-4">
-          <span
-            class="inline-block bg-pink-200 bg-opacity-75 rounded-full px-3 py-1 text-sm font-semibold text-pink-800 mr-2"
-          >
-            #cooking
-          </span>
-          <span
-          class="inline-block bg-green-200 bg-opacity-75 rounded-full px-3 py-1 text-sm font-semibold text-green-800 mr-2"
-        >
-          #gardening
-        </span>
-       
-      </div>
-    
-    </div>
-  </div>
-
-    <!-- FOOTER -->
-    <footer class="lg:flex lg:justify-between  bg-indigo-800 text-indigo-100 p-6">
-    
-      <div class="mx-w-sm lg:text-left lg:w-1/3 ml-4 mt-4 ">
-        <div class="text-center justify-center items-center mt-4">
-          <div class="flex flex-row justify-center lg:text-left leading-none">
-            <svg  width="28px" height="28px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-            </svg>
-          <h1 class="text-xl text-white mb-4 ml-2"> Subscribe For Updates</h1>
-        </div>
-          <p class="text-xs md:text-left font-light text-gray-100 mb-6">Lorem ipsum dolor voluptatem doloremque nisi ipsa asperiores placeat?</p>
-        
-            <label class="text-sm text-gray-100">Email Address:</label>
-            <input class="text-xs p-2 px-4 my-2 rounded focus:outline-indigo-200 text-indigo-800 w-60%" type="text" name="email" aria-label="email" placeholder="Enter your email address" required />
-
-            <button class="mt-2 mx-6 w-3/4 bg-indigo-600 hover:bg-indigo-500 font-light hover:font-normal text-white w-100 py-2 px-4 rounded transition duration-300">Sign Up</button>
-
-          </div>
-      
-      </div>
-     
-<div class="mx-w-sm text-center flex flex-col mt-8 mb-4 mx-12 justify-center lg:w-1/3">
-    <strong class="text-base leading-loose mx-auto mb-4 text-indigo-100 border-indigo-200 border-opacity-75 border-b-2 w-1/2">Archives</strong>
-    <div class="flex flex-row justify-center">
-      <ul class="text-sm font-light py-2 px-2">
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">October 2020</a></li>
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">September 2020</a></li>
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">August 2020</a></li>
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">July 2020</a></li>
-      </ul>
-
-      <ul class="text-sm font-light px-2 py-2">
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">June 2020</a></li>
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">May 2020</a></li>
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">April 2020</a></li>
-        <li class="pb-2 cursor:pointer hover:text-white hover:underline transition duration-300"><a href="#">March 2020</a></li>
-      </ul>
-    </div>
-    </div>
-      <div class="mx-w-sm text-center mt-8 mb-4 mx-12 lg:flex lg:flex-col justify-center lg:text-right lg:w-1/3">
-        <h1 class="text-xl font-bold">Title</h1>
-        <em class="text-xs font-light pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem!</em>
-        <p class="text-xs mt-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos, nostrum dicta dolore recusandae odio.</p>
-        <ul id="social-links" class="flex flex-row text-xl justify-center lg:justify-end mt-6">
-          <li class="px-2 cursor:pointer hover:text-white transition duration-300"><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-          <li class="px-2 cursor:pointer hover:text-white transition duration-300"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-          <li class="px-2 cursor:pointer hover:text-white transition duration-300"><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-          <li class="px-2 cursor:pointer hover:text-white transition duration-300"><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-      </div>
-
-      
-  <!-- NAVIGATE TO TOP -->
-  <div class="lg:relative lg:w-32 justify-center text-center text-gray-100 mt-12 mb-8 mx-auto">
-    <svg class="mx-auto" width="28px" height="28px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-    </svg>
-    <a class="text-base font-normal hover:font-semibold mb-4 transition duration-300 " href="#top"> 
- 
-Back To Top</a
-></div>
-
-    </footer>
   </body>
 </html>

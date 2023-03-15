@@ -10,6 +10,9 @@ module.exports = {
           'secondary': '#580088',
 
       },
+      fontFamily: {
+          'Wagner': ['WagnerModern', 'sans-serif'],
+      },
     container: {
       center: true,
       padding: '2rem'

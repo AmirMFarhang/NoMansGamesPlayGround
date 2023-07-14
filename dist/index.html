@@ -1,64 +1,80 @@
 <!DOCTYPE html>
-<script>
-  let bars = document.getElementById('bars');
-
-  let mobileMenu = document.getElementById('mobileMenu');
-
-  bars.addEventListener('click', function(){
-    mobileMenu.classList.toggle('show');
-  });
-</script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Merriweather:wght@300;400&family=Oxygen:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Merriweather:wght@300;400&family=Oxygen:wght@300;400;700&family=Satisfy&display=swap"
+          rel="stylesheet">
     <title>NoMansGame</title>
-  </head>
-  <body class="bg-primary">
+</head>
+<body class="bg-primary">
 
-    <!-- RESPONSIVE NAVIGATION -->
+<!-- RESPONSIVE NAVIGATION -->
+<div class="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-10/12 p-4 mt-10 bg-secondary upward-shadow rounded-full flex items-center justify-center">
+    <ul class="flex justify-center space-x-4">
+        <li><a href="#" class="text-black mx-4 hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="text-maintext mx-4 hover:text-blue-600">News</a></li>
+        <li><a href="#" class="text-maintext mx-4 hover:text-blue-600">Games</a></li>
+        <li><a href="#" class="text-maintext mx-4 hover:text-blue-600">Wiki</a></li>
+    </ul>
+</div>
 
-  <!-- TOP SECTION-->
-    <div class="grid grid-cols-1 md:grid-cols-3">
-        <section class="flex flex-col items-center md:col-span-1 md:mx-12 my-4 md:my-12 p-6 md:px-8 ">
-        <img class="flex-1 mx-h-180 mx-w-120 px-2"  src="img/logo.png" alt="">
-            <p class="flex-2 text-2xl md:text-6xl font-Wagner text-secondary px-2"> Where <i>community</i> comes first, <br> Where ratings matter</p>
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-3">
+    <section class="flex flex-col items-center md:col-span-1 md:mx-12 my-4 md:my-12 p-6 md:px-8 ">
+        <div class="glitch-container">
+            <img class="flex-1 mx-h-180 mx-w-120 px-2" src="img/logo.png" alt="">\
+        </div>
+        <p class="flex-2 text-2xl md:text-6xl font-Wagner text-secondary px-2"> Where <i>community</i> comes first, <br>
+            Where ratings matter</p>
     </section>
-        <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-2 mx-8 my-12 items-center p-4 ">
-            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
-            <div class="absolute rounded top-0 items-center overflow-visible bg-secondary md:w-16 md:h-16 m-10"></div>
-            <lottie-player class = "absolute top-0 object-fit mx-2" src="https://assets10.lottiefiles.com/packages/lf20_zaknwapl.json"  background="transparent"  speed="1" style=" width: 8rem; height: 8rem;"   loop autoplay></lottie-player>
-            <div class="px-6 py-4">
-                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
-                    <p class="text-maintext text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-            <div class="px-6 pt-4 pb-2">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
-                </div>
+    <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-2 mx-8 my-12 items-center p-4 ">
+        <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business"
+             alt="m">
+        <div class="absolute rounded top-0 items-center overflow-visible bg-secondary md:w-16 md:h-16 m-10"></div>
+        <lottie-player class="absolute top-0 object-fit mx-2"
+                       src="https://assets10.lottiefiles.com/packages/lf20_zaknwapl.json" background="transparent"
+                       speed="1" style=" width: 8rem; height: 8rem;" loop autoplay></lottie-player>
+        <div class="px-6 py-4">
+            <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+            <p class="text-maintext text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#winter</span>
         </div>
     </div>
-    <!-- MAIN -->
-    <section class="flex flex-row items-center">
-        <lottie-player class = "flex-2  mx-2" src="./Resources/Lottie/Flame.json"  background="transparent"  speed="1" style=" width: 12rem; height: 12rem;"   loop autoplay></lottie-player>
-        <h1 class = "flex-2 font-Wagner text-6xl md:text-9xl text-secondary "> Trending Right now </h1>
-    </section>
-    <section class="items-center"><
+</div>
+<!-- MAIN -->
+<!--Title of trending-->
+<section class="flex flex-row items-center">
+    <lottie-player class="flex-2  mx-2" src="./Resources/Lottie/Flame.json" background="transparent" speed="1"
+                   style=" width: 12rem; height: 12rem;" loop autoplay></lottie-player>
+    <h1 class="flex-2 font-Wagner text-6xl md:text-9xl text-secondary "> Trending Right now </h1>
+</section>
+<section>
     <div class="grid grid-cols-1 md:grid-cols-3">
         <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-1 mx-8 my-12 items-center  ">
-            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business"
+                 alt="m">
             <div class="px-6 py-4">
                 <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                 <p class="text-maintext text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                    adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                    Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2">
@@ -68,11 +84,14 @@
             </div>
         </div>
         <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-1 mx-8 my-12 items-center  ">
-            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business"
+                 alt="m">
             <div class="px-6 py-4">
                 <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                 <p class="text-maintext text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                    adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                    Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2">
@@ -82,11 +101,14 @@
             </div>
         </div>
         <div class="group relative transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded overflow-hidden bg-secondary col-span-1 mx-8 my-12 items-center  ">
-            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business"
+                 alt="m">
             <div class="px-6 py-4">
                 <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                 <p class="text-maintext text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                    adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                    Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                 </p>
             </div>
             <div class="px-6 pt-4 pb-2">
@@ -98,15 +120,19 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="transform transition duration-500 hover:scale-110 w-10/12 h-max-[44rem] rounded  bg-secondary mx-8 my-12 items-center  ">
-            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business" alt="m">
+            <img class="object-none h-[32rem] w-full rounded " src="https://source.unsplash.com/random/x120/?business"
+                 alt="m">
             <div class="px-6 py-4">
                 <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                 <p class="text-maintext text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                    adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                    Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                 </p>
             </div>
             <section class="absolute top-0 flex flex-row items-center ml-[-2rem] m-6 rounded ">
-                <h1 class = "flex-initial font-Wagner text-2xl md:text-4xl text-secondary bg-primary rounded pl-8 p-2 "> This week most viewed </h1>
+                <h1 class="flex-initial font-Wagner text-2xl md:text-4xl text-secondary bg-primary rounded pl-8 p-2 ">
+                    This week most viewed </h1>
             </section>
             <div class="px-6 pt-4 pb-2">
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-maintext mr-2 mb-2">#photography</span>
@@ -115,55 +141,161 @@
             </div>
         </div>
         <div class="flex flex-col grid-span-1">
-            <h1 class = "font-Wagner text-6xl md:text-9xl text-secondary mx-8"> Catch up 24 </h1>
+            <h1 class="font-Wagner text-6xl md:text-9xl text-secondary mx-8"> Catch up 24 </h1>
             <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
-                <div class="flex-initial px-6 py-4" >
+                <div class="flex-initial px-6 py-4">
                     <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                     <p class="text-maintext text-base">
-                        1h ago - Before games included accessibility options, an Xbox 360 controller modded with a popsicle stick was the only way for me to play.
+                        1h ago - Before games included accessibility options, an Xbox 360 controller modded with a
+                        popsicle stick was the only way for me to play.
                         COD: WORLD AT WAR
                         GRANT STONER
                     </p>
                 </div>
             </div>
             <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
-                <div class="flex-initial px-6 py-4" >
+                <div class="flex-initial px-6 py-4">
                     <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                     <p class="text-maintext text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                 </div>
             </div>
             <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
-                    <div class="flex-initial px-6 py-4" >
-                        <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
-                        <p class="text-maintext text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                    </div>
-            </div>
-            <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
-                <div class="flex-initial px-6 py-4" >
+                <div class="flex-initial px-6 py-4">
                     <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                     <p class="text-maintext text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                 </div>
             </div>
             <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
-                <div class="flex-initial px-6 py-4" >
+                <div class="flex-initial px-6 py-4">
                     <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
                     <p class="text-maintext text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit. adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
+                <div class="flex-initial px-6 py-4">
+                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                    <p class="text-maintext text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
                 </div>
             </div>
 
         </div>
     </div>
-    </section>
-      <!-- SUBSCRIBE -->
-  
+    <div class="grid grid-cols-1 md:grid-cols-2  w-full h-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+            <h1 class="font-Wagner text-6xl md:text-9xl text-secondary mx-8"> Catch up 24 </h1>
+            <div class="flex flex-row col-span-1 mx-8 my-2 md:w-11/12 md:h-[16rem] rounded-md bg-secondary hover:scale-110 transform transition duration-500">
+                <img class="flex-initial object-none w-6/12 h-[16rem] overflow-hidden rounded-md" src="https://source.unsplash.com/random/x120/?game,gamer,gaming"
+                     alt="m">
+            </div>
+            <div class="flex flex-row col-span-1 mx-8 my-2 md:w-11/12 md:h-[16rem] rounded-md bg-secondary hover:scale-110 transform transition duration-500">
+                <img class="flex-initial object-none w-6/12 h-[16rem] overflow-hidden rounded-md" src="https://source.unsplash.com/random/x120/?game,gamer,gaming"
+                     alt="m">
+            </div>
+            <div class="flex flex-row col-span-1 mx-8 my-2 md:w-11/12 md:h-[16rem] rounded-md bg-secondary hover:scale-110 transform transition duration-500">
+                <img class="flex-initial object-none w-6/12 h-[16rem] overflow-hidden rounded-md" src="https://source.unsplash.com/random/x120/?game,gamer,gaming"
+                     alt="m">
+            </div>
+            <div class="flex flex-row col-span-1 mx-8 my-2 md:w-11/12 md:h-[16rem] rounded-md bg-secondary hover:scale-110 transform transition duration-500">
+                <img class="flex-initial object-none w-6/12 h-[16rem] overflow-hidden rounded-md" src="https://source.unsplash.com/random/x120/?game,gamer,gaming"
+                     alt="m">
+            </div>
+            <div class="flex flex-row col-span-1 mx-8 my-2 md:w-11/12 md:h-[16rem] rounded-md bg-secondary hover:scale-110 transform transition duration-500">
+                <img class="flex-initial object-none w-6/12 h-[16rem] overflow-hidden rounded-md" src="https://source.unsplash.com/random/x120/?game,gamer,gaming"
+                     alt="m">
+            </div>
+            <div class="flex flex-row col-span-1 mx-8 my-2 md:w-11/12 md:h-[16rem] rounded-md bg-secondary hover:scale-110 transform transition duration-500">
+                <img class="flex-initial object-none w-6/12 h-[16rem] overflow-hidden rounded-md" src="https://source.unsplash.com/random/x120/?game,gamer,gaming"
+                     alt="m">
+            </div>
+        </div>
+        <div class="flex flex-col grid-span-1">
+            <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
+                <div class="flex-initial px-6 py-4">
+                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                    <p class="text-maintext text-base">
+                        1h ago - Before games included accessibility options, an Xbox 360 controller modded with a
+                        popsicle stick was the only way for me to play.
+                        COD: WORLD AT WAR
+                        GRANT STONER
+                    </p>
+                </div>
+            </div>
+            <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
+                <div class="flex-initial px-6 py-4">
+                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                    <p class="text-maintext text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
+                <div class="flex-initial px-6 py-4">
+                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                    <p class="text-maintext text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
+                <div class="flex-initial px-6 py-4">
+                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                    <p class="text-maintext text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-initial transform transition duration-500 hover:scale-110 w-10/12 h-max-[10rem] rounded  bg-secondary  mx-8 my-2 items-center  ">
+                <div class="flex-initial px-6 py-4">
+                    <div class="font-bold rounded text-xl mb-2 text-maintext">Mountain</div>
+                    <p class="text-maintext text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing eadipisicing elit. adipisicing elit.
+                        adipiadipisicing elit. sicing elit. adipisicing elit. adipisicing elit. adipisicing elit. lit.
+                        Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+            </div>
 
-  </body>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SUBSCRIBE -->
+
+
+</body>
+<script>
+    let bars = document.getElementById('bars');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    bars.addEventListener('click', function () {
+        mobileMenu.classList.toggle('show');
+    });
+</script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 </html>

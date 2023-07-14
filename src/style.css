@@ -7,4 +7,36 @@
         font-family: 'WagnerModern';
         src: url(../dist/Resources/Fonts/WagnerModern-OJE8.ttf);
     }
+    .upward-shadow {
+        box-shadow: 0 10px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+    @keyframes neon-blink {
+        0% { opacity: 1; }
+        50% { opacity: 0.3; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes neon-blink-random {
+        0% { animation-delay: 0s; }
+        100% { animation-delay: var(--blink-delay); }
+    }
+
+    .text-neon-blink {
+        --blink-delay: calc(1s * random());
+        animation: neon-blink 1s infinite, neon-blink-random 1s infinite;
+    }
+    .svg-triangle {
+        /*   border: 1px solid gray; */
+    }
+
+    .svg-triangle path {
+        stroke-width: 20;
+        stroke: black;
+        stroke-linejoin: round;
+        stroke-linecap:round;
+    }
+
+
+
+
 }
